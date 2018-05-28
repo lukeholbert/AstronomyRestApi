@@ -86,9 +86,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\MessierObjectsController.cs" />
+    <Compile Include="Controllers\PlanetsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CellestialMath.cs" />
+    <Compile Include="Models\EclipticCoordinate.cs" />
+    <Compile Include="Models\EquatorialCoordinate.cs" />
+    <Compile Include="Models\HorizontalCoordinate.cs" />
+    <Compile Include="Models\ICellestialObject.cs" />
+    <Compile Include="Models\ICoordinate.cs" />
+    <Compile Include="Models\MessierObject.cs" />
+    <Compile Include="Models\Planet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,8 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
